@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying '
-                bat './gradlew deploy'
+                //bat './gradlew deploy'
             }
         }
     }
