@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                bat './gradlew build'
+                bat './gradlew clean build'
             }
         }
         stage('Run') {
@@ -22,7 +22,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying to nowhere....'
+                echo 'Deploying '
+                bat './gradlew deploy'
             }
         }
     }
