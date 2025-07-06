@@ -5,7 +5,7 @@ package my.gradle.pipeline;
 
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello Alok!";
     }
 
     public static void main(String[] args) {
