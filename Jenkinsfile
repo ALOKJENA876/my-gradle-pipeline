@@ -8,14 +8,21 @@ pipeline {
                 bat './gradlew build'
             }
         }
+        stage('Run') {
+            steps {
+                echo 'Building..'
+                bat './gradlew run'
+            }
+        }
         stage('Test') {
             steps {
                 echo 'Testing..'
+                bat './gradlew test'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Deploying to nowhere....'
             }
         }
     }
